@@ -1,0 +1,121 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register Form</h1>
+    <form method="post"action ="{% url 'register' %}">
+        {% csrf_token %}
+    <label for ="username">Username:</label>
+    <input type="text"name="username"required><br>
+    <label for ="email">Email:</label>
+    <input type="text"name="email"required><br>
+    <label for ="phoneno">Phoneno:</label>
+    <input type="text"name="phoneno"required><br>
+    <label for ="password">Password:</label>
+    <input type="password"name="password"required><br>
+    <label for ="confirmpassword">ConfirmPassword:</label>
+    <input type="password"name="confirmpassword"required><br>
+    <button type="submit">Register</button>
+    </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+   
+</head>
+<style>
+    /* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+
+<div class="container">
+    <h1>Register Form</h1>
+    <form method="post"action ="{% url 'register' %}">
+        {% csrf_token %}
+    <label for ="username">Username:</label>
+    <input type="text"name="username"required><br>
+    <label for ="email">Email:</label>
+    <input type="text"name="email"required><br>
+    <label for ="phoneno">Phoneno:</label>
+    <input type="text"name="phoneno"required><br>
+    <label for ="password">Password:</label>
+    <input type="password"name="password"required><br>
+    <label for ="confirmpassword">ConfirmPassword:</label>
+    <input type="password"name="confirmpassword"required><br>
+    <button type="submit">Register</button>
+    </form>
+    </div>
+
+</body>
+</html>
